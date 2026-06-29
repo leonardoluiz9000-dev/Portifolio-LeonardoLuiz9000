@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfólio - Leonardo Faustino</title>
+
+    <!-- Ligação CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header class="cabecalho">
+        <nav class="menu">
+            <h1 class="logo">Leonardo Faustino</h1>
+
+            <button class="botao-menu" id="botao-menu">☰</button>
+
+            <ul class="lista-menu" id="lista-menu">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- inicial de apresentação -->
+    <main>
+        <section class="hero">
+            <div class="hero-texto">
+                <p class="subtitulo">Portfólio Pessoal</p>
+                <h2>Olá, eu sou Leonardo Faustino</h2>
+                <p>
+                    Estudante de Engenharia de Software, técnico em Mecatrônica
+                    e profissional da indústria automotiva.
+                </p>
+                <a href="#contato" class="botao-principal">Entrar em contato</a>
+            </div>
+        </section>
+
+        <!-- Seção Sobre Mim -->
+        <section id="sobre" class="secao">
+            <h2>Sobre mim</h2>
+
+            <p>
+                Meu nome é Leonardo Faustino, tenho 19 anos e atualmente trabalho
+                na Volkswagen, em São Bernardo do Campo, como montador. Tenho
+                interesse por carros, programação, engenharia e tecnologia.
+            </p>
+
+            <p>
+                No meu tempo livre, gosto de ler, escutar podcasts e jogar jogos
+                do estilo soulslike. Também gosto de estudar assuntos ligados à
+                tecnologia, como Arch Linux, inteligência artificial, criptomoedas,
+                blockchain, desenvolvimento de software e inovação automotiva.
+            </p>
+
+            <p>
+                Meu objetivo profissional é crescer dentro da Volkswagen e utilizar
+                meus conhecimentos em software e mecatrônica para contribuir com
+                a evolução de novas tecnologias aplicadas aos carros do futuro.
+                Busco unir minha experiência prática na indústria automotiva com
+                o desenvolvimento de soluções tecnológicas modernas.
+            </p>
+        </section>
+
+        <!-- Seção Formação -->
+        <section id="formacao" class="secao">
+            <h2>Formação</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Engenharia de Software</h3>
+                    <p>
+                        Atualmente curso Engenharia de Software pela UNINTER,
+                        com início em 2025.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Curso Técnico em Mecatrônica</h3>
+                    <p>
+                        Formação técnica voltada para áreas como automação,
+                        mecânica, eletrônica e integração de sistemas.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Ensino Médio</h3>
+                    <p>
+                        Ensino Médio completo.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Idiomas</h3>
+                    <p>
+                        Inglês em nível C1, utilizado para estudos técnicos,
+                        programação e conteúdos internacionais de tecnologia.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção Portfólio -->
+        <section id="portfolio" class="secao">
+            <h2>Portfólio</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Portfólio Pessoal</h3>
+                    <p>
+                        Site desenvolvido com HTML5, CSS3 e JavaScript para
+                        apresentar minhas informações pessoais, formação,
+                        interesses, projetos e formas de contato.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Projeto Acadêmico de Desenvolvimento Web</h3>
+                    <p>
+                        Projeto criado para praticar a construção de páginas web
+                        utilizando HTML, CSS e JavaScript puro, com foco em
+                        organização visual, navegação e validação de formulário.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Estudos em Tecnologia Automotiva e Software</h3>
+                    <p>
+                        Projeto de estudo voltado à integração entre mecatrônica,
+                        programação e inovação aplicada ao setor automotivo.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="secao">
+            <h2>Contato</h2>
+
+            <p>
+                Entre em contato comigo por e-mail ou pelo GitHub.
+            </p>
+
+            <div class="contato-info">
+                <p><strong>E-mail:</strong> leonardoluiz9000@gmail.com</p>
+                <p>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/leonardoluiz9000-dev" target="_blank">
+                        leonardoluiz9000-dev
+                    </a>
+                </p>
+            </div>
+
+            
+            <form id="formulario-contato" class="formulario">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+
+                <p id="mensagem-retorno" class="mensagem-retorno"></p>
+            </form>
+        </section>
+    </main>
+
+    
+    <footer class="rodape">
+        <p>© 2026 - Leonardo Faustino | Portfólio Pessoal</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
